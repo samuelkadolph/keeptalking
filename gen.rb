@@ -14,7 +14,8 @@ gemfile do
   gem "prawn", "~> 2.4"
 end
 
-tmp = File.join(File.expand_path(File.dirname(__FILE__)), "tmp")
+root = File.expand_path(File.dirname(__FILE__))
+tmp = File.join(root, "tmp")
 
 manual = File.join(tmp, "manual.pdf")
 overlay = File.join(tmp, "overlay.pdf")
@@ -32,7 +33,7 @@ if !File.exists?(manual)
 end
 
 Prawn::Document.generate(overlay) do
-  font "/System/Library/Fonts/Menlo.ttc"
+  font File.join(root, "assets", "DejaVuSansMono.ttf")
   font_size 14
 
   # Pages 1 - 12
@@ -66,10 +67,10 @@ Prawn::Document.generate(overlay) do
           360.00, 336.00, 312.00, 288.00, 264.00, 240.00,
           206.25, 182.25, 158.25, 134.25, 110.25,  86.25]
 
-  text_t = 540
-  text_b = 60
-  text_l = 30
-  text_r = 510
+  text_t = 535
+  text_b = 65
+  text_l = 35
+  text_r = 505
 
   size = 14
   margin = size / 2
@@ -141,6 +142,9 @@ manual_pdf = CombinePDF.load(manual)
 manual_pdf.pages.zip(overlay_pdf.pages).each do |manual_page, overlay_page|
   manual_page << overlay_page
 end
+
+# Insert blank page for better duplex printing
+manual_pdf.insert(1, CombinePDF.create_page)
 
 manual_pdf.save(combined)
 
