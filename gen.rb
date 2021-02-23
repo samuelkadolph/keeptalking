@@ -106,7 +106,7 @@ Prawn::Document.generate(overlay) do
     fill_rectangle [403.50, 432.00], 33, 21.75
     fill_rectangle [437.25, 432.00], 33, 21.75
 
-    # Left
+    # Down
     fill_rectangle [ 68.25, 376.50], 33, 21.75
     fill_rectangle [ 68.25, 354.00], 33, 21.75
 
@@ -117,7 +117,7 @@ Prawn::Document.generate(overlay) do
     fill_rectangle [403.50, 376.50], 33, 21.75
     fill_rectangle [437.25, 354.00], 33, 21.75
 
-    # Down
+    # Left
     fill_rectangle [ 68.25, 297.75], 33, 21.75
     fill_rectangle [ 68.25, 275.25], 33, 21.75
     fill_rectangle [302.25, 297.75], 33, 21.75
