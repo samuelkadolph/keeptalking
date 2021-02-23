@@ -2,26 +2,26 @@
 
 This repo is for modifying the manual for the VR game [Keep Talking and Nobody Explodes](https://www.bombmanual.com/) to
 add some helpful markings to make it easier to defuse the bomb.
-[Click here](https://github.com/samuelkadolph/keeptalking/releases/download/v1.0.0/Keep.Talking.Modified.Manual.pdf) to
+[Click here](https://github.com/samuelkadolph/keeptalking/releases/download/v1.0.1/Keep.Talking.Modified.Manual.pdf) to
 download the modified manual.
 
 ## Added Markings
 
 #### Complicated Wires
 
-![Combinated wires](https://rawcdn.githack.com/samuelkadolph/keeptalking/v1.0.0/img/complicated-wires.png)
+![Combinated wires](https://rawcdn.githack.com/samuelkadolph/keeptalking/v1.0.1/img/complicated-wires.png)
 
 This one is straight forward. The red wire ellipse is shaded red and the blue wire ellipse is shaded blue.
 
 #### Mazes
 
-![Mazes](https://rawcdn.githack.com/samuelkadolph/keeptalking/v1.0.0/img/mazes.png)
+![Mazes](https://rawcdn.githack.com/samuelkadolph/keeptalking/v1.0.1/img/mazes.png)
 
 Adding a grid coordinate system makes it very easy to give the location of the markings, white light, and triangle.
 
 #### Knobs
 
-![Knobs](https://rawcdn.githack.com/samuelkadolph/keeptalking/v1.0.0/img/knobs.png)
+![Knobs](https://rawcdn.githack.com/samuelkadolph/keeptalking/v1.0.1/img/knobs.png)
 
 This is a bit more complicated. I noticed there was a few patterns unique to each position of the knob.
 
